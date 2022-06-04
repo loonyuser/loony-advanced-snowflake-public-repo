@@ -1,0 +1,4 @@
+continent,country
+Europe,"{'name': 'France', 'city': array(['Paris', 'Nice', 'Marseilles', 'Cannes'], dtype=object)}"
+Europe,"{'name': 'Greece', 'city': array(['Athens', 'Piraeus', 'Hania', 'Heraklion', 'Rethymnon', 'Fira'], dtype=object)}"
+North America,"{'name': 'Canada', 'city': array(['Toronto', 'Vancouver', ""St. John's"", 'Saint John', 'Montreal', 'Halifax', 'Winnipeg', 'Calgary', 'Saskatoon', 'Ottawa', 'Yellowknife'], dtype=object)}"
