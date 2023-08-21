@@ -152,7 +152,7 @@ ORDER BY CITY;
 
 SELECT * FROM "SALES_DB"."PUBLIC"."IOWA_SALES"
 WHERE VOLUME_SOLD_LITERS >= 50 AND DATE LIKE '%2015'
-ORDER BY COUNTRY, CITY;
+ORDER BY COUNTY, CITY;
 
 
 # Click on Query ID and Profile, there we can see query is scanned by 'Result Query'
