@@ -66,7 +66,7 @@ SELECT * FROM LINEITEM LIMIT 10;
 
 CREATE OR REPLACE VIEW HIGH_TAX_VIEW
 AS
-SELECT * FROM STORE WHERE L_TAX > 0.05;
+SELECT * FROM LINEITEM WHERE L_TAX > 0.05;
 
 # Select from a regular view, (You will see result count exceeded, close that and show that the query took around 19 seconds to run)
 
@@ -80,7 +80,7 @@ SELECT * FROM HIGH_TAX_VIEW WHERE L_TAX > 0.06;
 
 CREATE OR REPLACE MATERIALIZED VIEW HIGH_TAX_VIEW_MATERIALIZED
 AS
-SELECT * FROM STORE WHERE L_TAX > 0.05;
+SELECT * FROM LINEITEM WHERE L_TAX > 0.05;
 
 
 # Select from a materialized view, (You will see result count exceeded, close that and show that the query will be slightly faster)
@@ -95,7 +95,7 @@ SELECT * FROM HIGH_TAX_VIEW_MATERIALIZED WHERE L_TAX > 0.06;
 
 CREATE OR REPLACE SECURE MATERIALIZED VIEW HIGH_TAX_VIEW_SECURE_MATERIALIZED
 AS
-SELECT * FROM STORE WHERE L_TAX > 0.05;
+SELECT * FROM LINEITEM WHERE L_TAX > 0.05;
 
 # Query it 
 
